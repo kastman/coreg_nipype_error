@@ -1,0 +1,26 @@
+{
+    "apply_to_files": [
+        [
+            "/Users/kastman/code/ofmri-ds107/sub001/basic_example/nipype-workingdir/spm_preproc/realign/bold_run1.img", 
+            "ad7a2921bb3a81d3edea1e412bea519f"
+        ], 
+        [
+            "/Users/kastman/code/ofmri-ds107/sub001/basic_example/nipype-workingdir/spm_preproc/realign/bold_run2.img", 
+            "66470616b86fe00bd13b3afd4da950ad"
+        ]
+    ], 
+    "jobtype": "estimate", 
+    "mfile": true, 
+    "out_prefix": "r", 
+    "source": [
+        [
+            "/Users/kastman/code/ofmri-ds107/sub001/basic_example/nipype-workingdir/spm_preproc/realign/meanbold_run1.img", 
+            "e0497eaeb644b55e8e0d89004ffda741"
+        ]
+    ], 
+    "target": [
+        "/Users/kastman/code/ofmri-ds107/sub001/basic_example/src/highres001.img", 
+        "6155274bcabb589d7f4ff307150e9e4c"
+    ], 
+    "use_v8struct": true
+}

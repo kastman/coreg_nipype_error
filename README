@@ -1,0 +1,28 @@
+Hi all,
+
+I'm troubleshooting a transformation matrix problem using SPM preprocessing in
+nipype. This is a basic toy example, but holds for more complex workflows.
+
+I'm using SPM for preprocessing, and in this case using the realign and
+coregister interfaces. I'm trying to follow best-practices by only estimating
+transformation matrices (which SPM stores in .mat alongside .img and .hdr)
+and then only applying the transformations at the end. I turned on
+`filemanip_level DEBUG` and can see that nipype **is** correctly copying along the
+.mat images, because these are in the .img/.hdr nifti pair format. However,
+when I go in to view the images, volumes 2..n are aligned with each other but
+not the 1st image, suggesting that something is going wrong with the .mat when
+viewing the coregisterd images create by this 2-node nipype workflow:
+
+![Image Coreg](ds107_wordoneback_coreg.png)
+
+When I create jobs and run them using the standard SPM jobmanager the images are
+aligned as expected. Note that the realign job I'm using is estwrite, and
+specifying that I'm only writing teh mean image (to use as the target for
+coreg), but this works the same if I just use 'estimate' and use the first image
+as the target.
+
+Nipype 0.10.0
+
+The data are from open-fmri, ds107 word one back test. They are untouched except
+for converting to NIFTI_PAIR and renaming with the run number (since SPM doesn't
+like images named the same thing).

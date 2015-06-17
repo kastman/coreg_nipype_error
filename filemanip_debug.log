@@ -1,0 +1,61 @@
+$ python spm_preproc.py
+150617-14:14:07,476 workflow INFO:
+	 ['check', 'execution', 'logging']
+150617-14:14:07,861 workflow INFO:
+	 Running serially.
+150617-14:14:07,863 workflow INFO:
+	 Executing node realign in dir: ./workingdir/spm_preproc/realign
+150617-14:14:07,869 filemanip DEBUG:
+	 ./workingdir/spm_preproc/realign/bold_run1.img
+150617-14:14:07,869 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/realign/bold_run1.img->./src/bold_run1.img
+150617-14:14:11,376 filemanip DEBUG:
+	 ./workingdir/spm_preproc/realign/bold_run1.hdr
+150617-14:14:11,376 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/realign/bold_run1.hdr->./src/bold_run1.hdr
+150617-14:14:11,478 filemanip DEBUG:
+	 ./workingdir/spm_preproc/realign/bold_run2.img
+150617-14:14:11,479 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/realign/bold_run2.img->./src/bold_run2.img
+150617-14:14:15,147 filemanip DEBUG:
+	 ./workingdir/spm_preproc/realign/bold_run2.hdr
+150617-14:14:15,147 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/realign/bold_run2.hdr->./src/bold_run2.hdr
+150617-14:18:41,795 workflow INFO:
+	 Executing node coregister in dir: ./workingdir/spm_preproc/coregister
+150617-14:18:41,850 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/bold_run1.img
+150617-14:18:41,851 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/coregister/bold_run1.img->./workingdir/spm_preproc/realign/bold_run1.img
+150617-14:18:45,126 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/bold_run1.mat
+150617-14:18:45,126 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/coregister/bold_run1.mat->./workingdir/spm_preproc/realign/bold_run1.mat
+150617-14:18:45,285 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/bold_run1.hdr
+150617-14:18:45,285 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/coregister/bold_run1.hdr->./workingdir/spm_preproc/realign/bold_run1.hdr
+150617-14:18:45,285 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/bold_run2.img
+150617-14:18:45,286 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/coregister/bold_run2.img->./workingdir/spm_preproc/realign/bold_run2.img
+150617-14:18:48,904 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/bold_run2.mat
+150617-14:18:48,905 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/coregister/bold_run2.mat->./workingdir/spm_preproc/realign/bold_run2.mat
+150617-14:18:49,42 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/bold_run2.hdr
+150617-14:18:49,42 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/coregister/bold_run2.hdr->./workingdir/spm_preproc/realign/bold_run2.hdr
+150617-14:18:49,44 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/meanbold_run1.img
+150617-14:18:49,44 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/coregister/meanbold_run1.img->./workingdir/spm_preproc/realign/meanbold_run1.img
+150617-14:18:49,45 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/meanbold_run1.hdr
+150617-14:18:49,45 filemanip DEBUG:
+	 Copying File: ./workingdir/spm_preproc/coregister/meanbold_run1.hdr->./workingdir/spm_preproc/realign/meanbold_run1.hdr
+150617-14:18:49,46 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/highres001.img
+150617-14:18:49,46 filemanip DEBUG:
+	 ./workingdir/spm_preproc/coregister/highres001.hdr

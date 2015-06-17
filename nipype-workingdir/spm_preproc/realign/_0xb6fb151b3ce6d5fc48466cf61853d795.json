@@ -1,0 +1,25 @@
+{
+    "in_files": [
+        [
+            "/Users/kastman/code/ofmri-ds107/sub001/basic_example/src/bold_run1.img", 
+            "ca9681da7305cf031b94fdf0c767a78d"
+        ], 
+        [
+            "/Users/kastman/code/ofmri-ds107/sub001/basic_example/src/bold_run2.img", 
+            "d64ed011785473069777ee693744fd10"
+        ]
+    ], 
+    "jobtype": "estwrite", 
+    "mfile": true, 
+    "needed_outputs": [
+        "mean_image", 
+        "modified_in_files"
+    ], 
+    "out_prefix": "r", 
+    "register_to_mean": true, 
+    "use_v8struct": true, 
+    "write_which": [
+        0, 
+        1
+    ]
+}
